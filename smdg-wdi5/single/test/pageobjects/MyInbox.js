@@ -11,16 +11,58 @@ module.exports = {
         }
     },
 
-    inboxTypeSingle: {
+    // inboxTypeSingle: {
+    //     selector: {
+    //         controlType: "sap.m.IconTabFilter",
+    //         viewName: "com.laidon.simplemdg.view.RequestHistory",
+    //         i18NText: {
+    //             propertyName: "text",
+    //             key: "APP_SIDEBAR_MYINBOX"
+    //         },
+    //     }
+    // },
+
+    // navigate tab group in inbox
+     selectOptionGroup: {
         selector: {
             controlType: "sap.m.IconTabFilter",
-            viewName: "com.laidon.simplemdg.view.RequestHistory",
-            i18NText: {
-                propertyName: "text",
-                key: "APP_SIDEBAR_MYINBOX"
-            },
+            viewName: "com.laidon.simplemdg.view.MyInbox",
+            bindingPath: {
+                path: "",
+                propertyPath: "/Group",
+                modelName: "local"
+            }
         }
     },
+// navigate tab individual in inbox
+        selectOptionIndual: {
+        selector: {
+            controlType: "sap.m.IconTabFilter",
+            viewName: "com.laidon.simplemdg.view.MyInbox",
+            bindingPath: {
+                path: "",
+                propertyPath: "/Direct",
+                modelName: "local"
+            }
+        }
+    },
+// navigate tab Mass in inbox
+      selectOptionMass: {
+        selector: {
+            controlType: "sap.m.IconTabFilter",
+            viewName: "com.laidon.simplemdg.view.MyInbox",
+            bindingPath: {
+                path: "",
+                propertyPath: "/Mass",
+                modelName: "local"
+            }
+        }
+    },
+
+    
+
+
+
 
     newRequest: {
         selector: {

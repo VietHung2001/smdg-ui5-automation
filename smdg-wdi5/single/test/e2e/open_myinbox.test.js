@@ -5,15 +5,18 @@ const smdg = require('../helper/mainActions');
 const { wdi5 } = require("wdio-ui5-service");
 const baseUrl = "https://butterball-dev-simplemdg-web.cfapps.us21.hana.ondemand.com";
 
-describe("Simple steps to open a Change Request", () => {
+describe("Simple steps to open a My Inbox", () => {
     before(async () => await restoreSession(baseUrl));
 
-    it("should navigate to My Request", async () => {
+    it("should navigate to My Inbox", async () => {
         //await browser.pause(10000);
         await browser.waitForUI5();
 
         await smdg.press(MyInbox.myInbox);
-        await smdg.press(MyInbox.inboxTypeSingle);
+        // navigate tab in in box
+        await smdg.press(MyInbox.selectOptionGroup);
+        await smdg.press(MyInbox.selectOptionIndual);
+        await smdg.press(MyInbox.selectOptionMass);
         // await smdg.press(MyRequest.newRequest);
 
         // await smdg.press(MyRequest.selectObjectType);
