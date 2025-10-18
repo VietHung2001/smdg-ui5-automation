@@ -1,0 +1,8 @@
+{
+   "name": "smdg-wdi5",
+   "version": "1.5.0",   
+   
+   "scripts": {
+      "wdi5": "wdio run ./single/test/e2e/wdio.conf.js"
+   }
+}

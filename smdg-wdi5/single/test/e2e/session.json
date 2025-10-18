@@ -1,0 +1,20 @@
+[
+  {
+    "domain": "butterball-dev-simplemdg-web.cfapps.us21.hana.ondemand.com",
+    "httpOnly": true,
+    "name": "__VCAP_ID__",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "8072a13f-f598-4499-7310-98b0"
+  },
+  {
+    "domain": "butterball-dev-simplemdg-web.cfapps.us21.hana.ondemand.com",
+    "httpOnly": true,
+    "name": "JSESSIONID",
+    "path": "/",
+    "sameSite": "Lax",
+    "secure": true,
+    "value": "s%3AWMWOwgi1ywlL_cIlpsepN7i6e8sGHOsf.tCDDNZxgnahjW32PrwRnnMf04EkdyMo1JSQvlFXUb54"
+  }
+]

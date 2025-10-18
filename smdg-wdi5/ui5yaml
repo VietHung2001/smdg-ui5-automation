@@ -1,0 +1,8 @@
+specVersion: '2.5'
+type: application
+metadata:
+  name: smdg-wdi5
+resources:
+  configuration:
+    paths:
+      webapp: webapp

@@ -1,0 +1,85 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "smdg.wdi5",
+    "type": "application",
+    "title": "SMDG WDI5 Cytiva",
+    "description": "Cytiva Regression Test",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "tablet": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_horizon",
+      "sap_fiori_3"
+    ]
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "smdg.wdi5.view.App",
+      "type": "XML",
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "settings": {}
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "smdg.wdi5.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "bypassed": {
+          "target": "notFound"
+        },
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "home",
+          "target": "home"
+        }
+      ],
+      "targets": {
+        "home": {
+          "viewName": "Home",
+          "viewId": "home"
+        },
+        "notFound": {
+          "viewName": "NotFound",
+          "viewId": "notFound"
+        }
+      }
+    }
+  }
+}
