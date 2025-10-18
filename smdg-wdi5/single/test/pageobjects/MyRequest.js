@@ -133,6 +133,34 @@ module.exports = {
             },searchOpenDialogs: true,
         }
     },
+// nút button submit góc phải
+    submitbutton: {
+        selector: {
+            id: "submitButton",
+            viewName: "com.laidon.simplemdg.view.CreateRequest",
+            }
+        },
+// nút button submit trong dialog
+    submitbuttonDialog: {
+        selector: {
+            controlType: "sap.m.Button",
+            viewName: "com.laidon.simplemdg.view.CreateRequest",
+            i18NText: {
+                    propertyName: "text",
+                    key: "APP_COMMON_POPUP_CREATEREQUEST_SUBMIT"
+            },
+            searchOpenDialogs: true,
+            }
+        },
+
+        okbuttonDialog: {
+        selector: {
+            controlType: "sap.m.Button",
+            searchOpenDialogs: true,
+            }
+        },
+
+
 
    
 
