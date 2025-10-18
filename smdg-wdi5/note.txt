@@ -1,0 +1,17 @@
+kiem tra file nao thay đổi
+=> git status
+
+add file cần commit 
+=> git add . 
+
+hoặc cụ thể 1 file
+=> git add tenfile.js
+
+3. Commit với nội dung mô tả 
+=> git commit -m "thêm trang mới"
+
+
+4. Push lên GitHub
+=> git push origin main 
+hoac 1 nhánh 
+
