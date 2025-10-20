@@ -30,6 +30,24 @@ describe("Simple steps to open a Change Request", () => {
         await smdg.press(MyRequest.submitbuttonDialog);
         await smdg.press(MyRequest.okbuttonDialog);
 
+        /*============================================================================================== */
+         await browser.pause(18000);
+        await browser.waitForUI5();
+        // qua trang my in box và chọn tab individual
+        await smdg.press(MyInbox.myInbox);
+        // await smdg.press(MyInbox.selectOptionIndual);
+        // click checkbox đầu tiên hoặc check box của CR cần approve
+        await browser.waitForUI5();
+        await browser.pause(8000);
+        await smdg.press(MyInbox.checkboxbutton);
+        // click approve button option trên thanh gồm approve || rework || reject
+        await smdg.press(MyInbox.Approvebuttoninbox);
+        // click confrim button dialog sau khi click approve trên thanh 
+        await smdg.press(MyInbox.confrimbuttoninbox);
+        // click approve button dialog sau khi click confrim button 
+        await smdg.press(MyInbox.approvebuttondialog);
+        /*============================================================================================== */
+
         await browser.pause(30000);
         // await smdg.press(MyRequest.groupBy);
 
