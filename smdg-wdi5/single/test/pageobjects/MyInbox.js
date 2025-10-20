@@ -59,7 +59,7 @@ module.exports = {
         }
     },
 
-    
+
 
 
 
@@ -175,6 +175,67 @@ module.exports = {
             },searchOpenDialogs: true,
         }
     },
+
+    // nút checkbox  trong toàn bộ bảng
+   checkboxbutton: {
+        selector: {
+            controlType: "sap.m.CheckBox",
+            viewName: "com.laidon.simplemdg.view.MyInbox",
+            properties: {
+                editable: true
+            },
+            ancestor: {
+                    controlType: "sap.m.ColumnListItem",
+                    viewName: "com.laidon.simplemdg.view.MyInbox",
+                    bindingPath: {
+                            modelName: "local",
+                            path: "/MyInboxData/0"
+                    },
+                    ancestor: {
+                            id: "tableMyInbox",
+                            viewName: "com.laidon.simplemdg.view.MyInbox"
+                    }
+        }
+    }
+},
+
+// click approve ở my inbox
+    Approvebuttoninbox: {
+        selector: {
+            controlType: "sap.m.Button",
+            viewName: "com.laidon.simplemdg.view.MyInbox",
+            properties: {
+                text: "Approve"
+            },
+        }
+    },
+
+    //click confrim button dialog
+     confrimbuttoninbox: {
+        selector: {
+            controlType: "sap.m.Button",
+            properties: {
+                text: "Confirm"
+            },
+            searchOpenDialogs: true,
+        }
+    },
+
+    // approve button trong dialog 
+    approvebuttondialog: {
+        selector: {
+            controlType: "sap.m.Button",
+            properties: {
+                text: "Approve"
+            },
+            searchOpenDialogs: true,
+        }
+
+    },
+
+
+
+
 
    
 

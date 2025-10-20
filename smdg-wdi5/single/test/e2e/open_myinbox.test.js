@@ -14,9 +14,34 @@ describe("Simple steps to open a My Inbox", () => {
 
         await smdg.press(MyInbox.myInbox);
         // navigate tab in in box
-        await smdg.press(MyInbox.selectOptionGroup);
+      //  await smdg.press(MyInbox.selectOptionGroup);
         await smdg.press(MyInbox.selectOptionIndual);
-        await smdg.press(MyInbox.selectOptionMass);
+       // await smdg.press(MyInbox.selectOptionMass);
+
+       // click checkbox hoặc check box của CR muốn approve
+       await smdg.press(MyInbox.checkboxbutton);
+
+       // click approve button option trên thanh gồm approve || rework || reject
+       await smdg.press(MyInbox.Approvebuttoninbox);
+ 
+       // click confrim button dialog sau khi click button approve trên thanh
+       await smdg.press(MyInbox.confrimbuttoninbox);
+
+       // clcik approve button dialog sau khi click confrim button 
+       await smdg.press(MyInbox.approvebuttondialog);
+
+
+
+
+
+
+
+
+
+
+
+
+
         // await smdg.press(MyRequest.newRequest);
 
         // await smdg.press(MyRequest.selectObjectType);

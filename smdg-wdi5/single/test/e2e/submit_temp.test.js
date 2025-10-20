@@ -1,5 +1,6 @@
 const restoreSession = require('../helper/restoreSession');
 const MyRequest = require('../pageobjects/MyRequest');
+const MyInbox = require('../pageobjects/MyInbox');
 const smdg = require('../helper/mainActions');
 const { wdi5 } = require("wdio-ui5-service");
 const baseUrl = "https://butterball-dev-simplemdg-web.cfapps.us21.hana.ondemand.com";
@@ -21,15 +22,15 @@ describe("Simple steps to open a Change Request", () => {
         await smdg.press(MyRequest.selectOptionType);
         await smdg.press(MyRequest.selectOptionCopy);
 
-         await smdg.enterText(MyRequest.descriptionField, "[H] Submit GROUP 2 VERP -n05");
-         await smdg.enterText(MyRequest.priorityField, "HIGH");
-         await smdg.enterText(MyRequest.reasonField, "New Product");
+        await smdg.enterText(MyRequest.descriptionField, "[H] Submit GROUP 2 VERP -n10");
+        await smdg.enterText(MyRequest.priorityField, "HIGH");
+        await smdg.enterText(MyRequest.reasonField, "New Product");
 
-         await smdg.press(MyRequest.submitbutton);
-         await smdg.press(MyRequest.submitbuttonDialog);
-         await smdg.press(MyRequest.okbuttonDialog);
-        
-        await browser.pause(5000);
+        await smdg.press(MyRequest.submitbutton);
+        await smdg.press(MyRequest.submitbuttonDialog);
+        await smdg.press(MyRequest.okbuttonDialog);
+
+        await browser.pause(30000);
         // await smdg.press(MyRequest.groupBy);
 
         await browser.debug();
