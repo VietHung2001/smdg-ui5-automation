@@ -1,7 +1,7 @@
-kiem tra file nao thay đổi
+1. kiem tra file nao thay đổi
 => git status
 
-add file cần commit 
+2. add file cần commit 
 => git add . 
 
 hoặc cụ thể 1 file
@@ -14,4 +14,3 @@ hoặc cụ thể 1 file
 4. Push lên GitHub
 => git push origin main 
 hoac 1 nhánh 
-
